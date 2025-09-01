@@ -1,0 +1,113 @@
+how to build web pages
+
+Tags:-
+A piece of markup which defines the structure off webpage 
+Meaning of content and formatting also 
+
+
+1. Opening Tag / Start Tag --> <tagName>
+2. Closing Tag  / End Tag  --> </tagName>
+
+
+<tagname > content </tagname>  => container
+<tagname> content </tagname >  => Container + Content -> Element
+
+Types of tags 
+
+1. Paired tags / Container tags - <tagName> </tagName>
+2. Non paired tags / Void tags / self closing tags - <tagname> or <tagname/>
+
+
+Void elements
+
+<tagName>
+
+
+To create nbasic web page  we need basic structure
+Basic Structure:
+
+<html>
+	<head></head>
+	<body></body>
+</html>
+
+
+Notepad
+Browser
+
+Text Editors:
+VS Code
+Atom
+Brackets
+subline
+
+
+
+<!Doctype html>
+! -> do something / do not something
+It is not a tag 
+w3c - world wide web cosultorium
+DTD -> Document type definition
+
+doctype -> always associated with DTD 
+html -> Version of html i.e HTML5
+
+
+
+what will happen if DOCTYPE is not mentioned?
+
+Quirk mode
+
+html
+canvas
+geolocation 
+
+
+<!DOCTYPE html>
+<html lang="en">   opening tag, Root element 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sample</h1>
+    <p>Lorem ipsum </p>
+</body>
+</html>
+
+
+<b> - bold -> appearance
+
+<strong> - strong -> meaning
+
+sematic teg -> meaning of the tag is more important than the appearance of the tag
+
+
+
+
+bold - appearance, non-semantic tag 
+
+strong - appearance and semantic meaning
+
+Screen readers - read the content of the webpage to the user
+
+semantics - meaning of the content or important text
+
+
+deprecated tags
+
+
+
+
+anchor tag
+
+search engine
+seo - search engine optimization
+highest ranking
+flow layout -> sematic structure ==> appearance
+div & span
+
+screen readers - voice - visually  blind  - semantics(meaning)
+
+semantic tags

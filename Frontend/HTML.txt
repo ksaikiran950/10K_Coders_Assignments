@@ -1,0 +1,93 @@
+how to build web pages
+
+Tags:-
+A piece of markup which defines the structure off webpage 
+Meaning of content and formatting also 
+
+
+1. Opening Tag / Start Tag --> <tagName>
+2. Closing Tag  / End Tag  --> </tagName>
+
+
+<tagname > content </tagname>  => container
+<tagname> content </tagname >  => Container + Content -> Element
+
+Types of tags 
+
+1. Paired tags / Container tags - <tagName> </tagName>
+2. Non paired tags / Void tags / self closing tags - <tagname> or <tagname/>
+
+
+Void elements
+
+<tagName>
+
+
+To create nbasic web page  we need basic structure
+Basic Structure:
+
+<html>
+	<head></head>
+	<body></body>
+</html>
+
+
+Notepad
+Browser
+
+Text Editors:
+VS Code
+Atom
+Brackets
+subline
+
+
+
+<!Doctype html>
+! -> do something / do not something
+It is not a tag 
+w3c - world wide web cosultorium
+DTD -> Document type definition
+
+doctype -> always associated with DTD 
+html -> Version of html i.e HTML5
+
+
+
+what will happen if DOCTYPE is not mentioned?
+
+Quirk mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

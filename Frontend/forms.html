@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Layout</title>
+    <style>
+        .head1{
+            font-size: 2em;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .head2{
+            font-size: 1.5em;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .menu-log {
+            float: right;
+            right: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head1">Login Page</div>
+        <div class="head2">Sample</div>
+    </header>
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="menu-log">
+        <a href="#login">Login</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Welcome to the Login Page</h1>
+        <p>Please enter your credentials to log in.</p>
+    
+    
+    <fieldset><legend>Login Form</legend>
+    <label for="role">Role:
+        <input type="radio" name="role" id="admin" value="admin">Admin
+        <input type="radio" name="role" id="user" value="user">User
+        <input type="radio" name="role" id="guest" value="guest">Guest
+        <select name="section" id="section"><label for="section">Section:</label> Section
+            <datalist>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <optgroup>
+
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                </optgroup>
+            </datalist>
+        </select>
+    </label><br>
+    <label for="username">Username:
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    </label><br>
+    <label for="password">Password:
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </label><br>
+    <label for="dept">Department:</label>
+    <select name="dept" id="dept">
+        <option value="1">CSE</option>
+        <option value="2">ECE</option>
+        <option value="3">ME</option>
+        <option value="4">CE</option>
+    </select><br>
+    <label for="submit">Submit:
+        <button>Submit</button>
+    </label><br>
+    <label for="remarks">Remarks : <br>
+        <textarea name="remarks" id="remarks" cols="30" rows="5" placeholder="Enter your remarks"></textarea>
+    </label>
+    
+    </fieldset>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, impedit expedita aperiam ipsa vel ullam ducimus laboriosam dolor corrupti? Voluptas eaque ipsum minus minima odit! Animi earum velit excepturi magni!</p>
+    <aside>K SAI KIRAN</aside>
+    <details>
+        <summary>My practice</summary>
+        <p>My practice is my passion</p>
+    </details>
+    <ol>
+        <li >content</li>
+    <li >content</li>
+    <li >content</li>
+    </ol>
+    <footer>
+    <div class="footer">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>

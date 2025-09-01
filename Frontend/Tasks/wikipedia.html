@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AttendEase — Wiki-style HTML</title>
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AttendEase</h1>
+      <div class="subtitle">Fictional attendance-management software suite</div>
+    </header>
+
+    <aside class="infobox" aria-label="Software infobox">
+      <img src="https://via.placeholder.com/250x100.png?text=AttendEase+logo" alt="AttendEase logo">
+      <dl>
+        <dt>Developer</dt><dd>Example Labs</dd>
+        <dt>Initial release</dt><dd>15 June 2022</dd>
+        <dt>Latest release</dt><dd>28 July 2025 (v3.2.1)</dd>
+        <dt>Programming</dt><dd>Python, JavaScript</dd>
+        <dt>Platform</dt><dd>Cross-platform</dd>
+        <dt>License</dt><dd>Proprietary</dd>
+        <dt>Website</dt><dd><a href="#">attendease.example</a></dd>
+      </dl>
+    </aside>
+
+    <section>
+      <p><strong>AttendEase</strong> is a fictional <small>attendance-management</small> software suite designed for schools and small businesses. It provides real-time check-ins, analytics dashboards, and automated alerts. The app emphasizes simplicity and privacy by storing personally identifiable information (PII) with role-based access controls.</p>
+
+      <h2>Overview</h2>
+      <p>AttendEase offers:</p>
+      <ul>
+        <li><strong>Real-time</strong> clock-in / clock-out using QR codes.</li>
+        <li>Role-based permissions with granular scopes (<code>admin</code>, <code>manager</code>, <code>viewer</code>).</li>
+        <li>Built-in reporting and export to CSV/Excel.</li>
+        <li>Integrations via a REST API (<code>/v1/</code>) and webhooks.</li>
+      </ul>
+      <p>A core design goal is a low learning curve; the UI favors a three-pane layout with keyboard shortcuts (e.g., <span class="kbd">G</span> then <span class="kbd">D</span> to jump to the Dashboard).</p>
+
+      <h2>Features</h2>
+      <dl>
+        <dt>Attendance</dt>
+        <dd>Users scan dynamic QR badges; duplicate scans within 60 seconds are ignored via <code>idempotency_key</code> logic.</dd>
+
+        <dt>Analytics</dt>
+        <dd>A configurable dashboard shows trends, including mean lateness and department-level heatmaps.</dd>
+
+        <dt>Privacy</dt>
+        <dd>Data minimization is enforced; only necessary fields (name, role, status) are required at onboarding.</dd>
+      </dl>
+
+      <h2>History</h2>
+      <p>The first prototype was built during a hackathon in 2021. Version 2.0 introduced webhook retries with exponential backoff and switched the backend from monolith to services. Version 3.0 added offline mode using background sync.</p>
+
+      <h2>Architecture</h2>
+      <p>AttendEase uses a service-oriented design:</p>
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Purpose</th><th>Example tech</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Auth</td><td>OAuth 2.1 / OIDC provider</td><td>Python (FastAPI)</td></tr>
+          <tr><td>Events</td><td>Ingests scans, emits webhooks</td><td>Node.js (Express)</td></tr>
+          <tr><td>Analytics</td><td>Aggregations, scheduled jobs</td><td>Python (Pandas)</td></tr>
+          <tr><td>Frontend</td><td>SPA dashboard</td><td>React</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>“Build for clarity first; scale follows.” — Example Labs engineering handbook</blockquote>
+
+      <h2>API — Example</h2>
+      <p>The public API follows REST conventions. Example: create attendance record:</p>
+      <pre><code>{
+  "user_id": "U12345",
+  "timestamp": "2025-08-26T06:12:00Z",
+  "method": "qr",
+  "location": "HQ-01"
+}
+</code></pre>
+
+      <h2>Reception</h2>
+      <p>Analysts noted the app’s <em>low setup time</em> and <em>transparent pricing</em> but requested stronger SSO options for enterprises.</p>
+
+      <h2>See also</h2>
+      <ul>
+        <li><a href="#">Time and attendance system</a></li>
+        <li><a href="#">Workforce management</a></li>
+        <li><a href="#">Single sign-on</a></li>
+      </ul>
+
+      <div class="clear"></div>
+
+      <h2>References</h2>
+      <ol class="references">
+        <li>AttendEase Technical Whitepaper — Example Labs (14 May 2024).</li>
+        <li>Lee, Aria. "Visualizing time-series for workforce analytics", Journal of Workplace Data (2023).</li>
+        <li>"Five SMB tools to watch", Tech Daily (2 February 2025).</li>
+      </ol>
+
+    </section>
+
+    <footer style="margin-top:20px;font-size:0.9rem;color:var(--muted)">
+      <p>Generated HTML — fictional content for demonstration purposes.</p>
+    </footer>
+  </div>
+</body>
+</html>
