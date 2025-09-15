@@ -1,0 +1,85 @@
+
+					Date: 8-9-25
+
+Slicing:
+	It is a type of method used to extract required portion from iterable type of datatypes (list,strings,tuple)…
+	
+syntax:
+	list_name[start_ind : end_ind : step]	
+
+	num = [1,2,3,4,5,6,7,8,9,10]
+	print(num[4:8])
+	o/p: [5,6,7,8]
+
+# print(num[4:8])
+# print(num[2:])
+# print(num[:8])
+# print(num[::2])
+# print(num[::-1])
+
+
+Dictionary built in functions:
+	d={ keys:values , … }
+1.get():
+	To get value of particual key …
+	d= {"name" : "kethan" , "age": 22 , "gender" : "Male" }
+	d.get("age")
+	o/p:22
+syntax:
+ 	dic_name.get(key,default_value)
+
+2.keys():
+	To get all keys of a dict...
+
+syntax:
+	dic_name.keys()
+
+3.values():
+	To get all values of a dict...
+
+syntax:
+	dic_name.values()
+
+4.items():
+	To get key, value pair of a dict (tuple)...
+
+syntax:
+	dict_name.items()
+
+5.update():
+	To add a pair to a dict...
+
+syntax:
+	dict_name.update({key:value})
+
+	d= {"name" : "kethan" , "age": 22 , "gender" : "Male" }
+
+	dict_name.update({"clg name":"ventakeshwara clg"})
+
+6.clear():
+	To del all pairs from a dict...
+
+syntax:
+	dict_name.clear()
+
+7.copy():
+To copy a dict to another var...
+
+syntax:
+	var_name=dict_name.copy()
+
+8.pop():
+To remove particular key value pair...
+
+syntax:
+	dict_name.pop(key,"default value")
+
+9.fromkeys():
+	To convert list elements as keys in a dict...
+
+num = ["name","age","gender"]
+
+d = {"name":0,"age":0,"gender":0}
+
+syntax:
+	dict_name.fromkeys(list_name,0)
