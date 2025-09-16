@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML-only General Dashboard</title>
+  <meta name="description" content="A general dashboard built using only HTML elements (no CSS, no JS).">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+  <!-- Top header -->
+  <header>
+    <h1>Acme Analytics — Dashboard</h1>
+    <p>
+      <small>
+        Last updated:
+        <time datetime="2025-09-16">September 16, 2025</time>
+      </small>
+    </p>
+  </header>
+
+  <!-- Global navigation -->
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#reports">Reports</a></li>
+      <li><a href="#users">Users</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#help">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search / quick actions -->
+  <section aria-labelledby="quick-actions">
+    <h2 id="quick-actions">Quick Actions</h2>
+
+    <form action="#" method="get" role="search" aria-label="Dashboard search">
+      <label for="q">Search data:</label>
+      <input id="q" name="q" type="search" placeholder="Search by name, id or keyword">
+      <button type="submit">Search</button>
+
+      <fieldset>
+        <legend>Filters</legend>
+        <label for="date-from">From</label>
+        <input id="date-from" name="date_from" type="date">
+
+        <label for="date-to">To</label>
+        <input id="date-to" name="date_to" type="date">
+
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option value="">Any</option>
+          <option value="active">Active</option>
+          <option value="pending">Pending</option>
+          <option value="archived">Archived</option>
+        </select>
+
+        <label for="limit">Show rows</label>
+        <input id="limit" name="limit" type="number" min="1" max="100" value="10">
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- Two-column-ish semantic grouping: aside for secondary content, main for primary -->
+  <aside aria-labelledby="sidebar">
+    <h2 id="sidebar">Sidebar</h2>
+
+    <section aria-labelledby="notifications">
+      <h3 id="notifications">Notifications</h3>
+      <ul>
+        <li><strong>Alert:</strong> Backup completed at <time datetime="2025-09-16T01:20">01:20</time></li>
+        <li><strong>Info:</strong> New user signup — <a href="#users">view users</a></li>
+        <li><strong>Warning:</strong> Disk usage above 80%</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="quick-links">
+      <h3 id="quick-links">Quick Links</h3>
+      <ol>
+        <li><a href="#reports">Generate report</a></li>
+        <li><a href="#users">Export users</a></li>
+        <li><a href="#settings">System settings</a></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="support">
+      <h3 id="support">Support</h3>
+      <address>
+        Support: <a href="mailto:support@acme.example">support@acme.example</a><br>
+        Phone: <a href="tel:+911234567890">+91 12345 67890</a>
+      </address>
+    </section>
+  </aside>
+
+  <!-- Main dashboard area -->
+  <main aria-labelledby="overview" id="overview">
+    <h2>Overview</h2>
+
+    <!-- KPI row implemented with a description list -->
+    <section aria-labelledby="kpis">
+      <h3 id="kpis">Key Performance Indicators</h3>
+      <dl>
+        <dt>Total Users</dt>
+        <dd><strong>12,348</strong> <small>(+4.3% weekly)</small></dd>
+
+        <dt>Active Sessions</dt>
+        <dd><strong>1,872</strong> <progress value="1872" max="5000">1872/5000</progress></dd>
+
+        <dt>Conversion Rate</dt>
+        <dd><strong>3.8%</strong> <meter value="3.8" min="0" max="100">3.8%</meter></dd>
+
+        <dt>Avg Response Time</dt>
+        <dd><strong>420 ms</strong></dd>
+      </dl>
+    </section>
+
+    <!-- Charts / visuals area (no CSS/JS: we use simple ASCII chart in <pre> or SVG-free representation) -->
+    <section aria-labelledby="activity">
+      <h3 id="activity">Activity Snapshot</h3>
+
+      <figure>
+        <figcaption>Weekly signups (ASCII sparkline)</figcaption>
+        <pre>
+Mon:  |||
+Tue:  |||||||
+Wed:  ||||
+Thu:  |||||||||||
+Fri:  |||||||
+Sat:  ||
+Sun:  |||||
+        </pre>
+      </figure>
+
+      <figure>
+        <figcaption>Top 5 pages by visits</figcaption>
+        <table>
+          <caption>Page visits this week</caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Page</th>
+              <th scope="col">Visits</th>
+              <th scope="col">Bounce rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>/home</td>
+              <td>23,456</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>/products</td>
+              <td>12,345</td>
+              <td>37%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>/pricing</td>
+              <td>8,901</td>
+              <td>49%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>/docs</td>
+              <td>6,234</td>
+              <td>29%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>/contact</td>
+              <td>3,210</td>
+              <td>60%</td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
+    </section>
+
+    <!-- Reports area -->
+    <section id="reports" aria-labelledby="reports-heading">
+      <h3 id="reports-heading">Reports</h3>
+
+      <article aria-labelledby="sales-report">
+        <h4 id="sales-report">Sales Summary</h4>
+        <p>Monthly revenue: <strong>₹1,234,567</strong></p>
+        <details>
+          <summary>Download options</summary>
+          <ul>
+            <li><a href="#" download="sales.csv">CSV</a></li>
+            <li><a href="#" download="sales.xlsx">XLSX</a></li>
+            <li><a href="#" download="sales.pdf">PDF</a></li>
+          </ul>
+        </details>
+      </article>
+
+      <article aria-labelledby="custom-report">
+        <h4 id="custom-report">Create custom report</h4>
+        <form action="#" method="post" aria-label="Create custom report">
+          <label for="r-name">Report name</label>
+          <input id="r-name" name="report_name" type="text" required>
+
+          <label for="r-type">Type</label>
+          <select id="r-type" name="report_type">
+            <option value="summary">Summary</option>
+            <option value="detailed">Detailed</option>
+            <option value="audit">Audit</option>
+          </select>
+
+          <label for="r-range">Date range</label>
+          <input id="r-range" name="report_range" type="text" placeholder="e.g. 2025-01-01 to 2025-01-31">
+
+          <fieldset>
+            <legend>Include</legend>
+            <label><input type="checkbox" name="include[]" value="users"> Users</label>
+            <label><input type="checkbox" name="include[]" value="sessions"> Sessions</label>
+            <label><input type="checkbox" name="include[]" value="transactions"> Transactions</label>
+          </fieldset>
+
+          <button type="submit">Generate</button>
+        </form>
+      </article>
+    </section>
+
+    <!-- Users management -->
+    <section id="users" aria-labelledby="users-heading">
+      <h3 id="users-heading">Users</h3>
+
+      <table>
+        <caption>Recent users</caption>
+        <thead>
+          <tr>
+            <th scope="col">User ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>U1001</td>
+            <td>Kamal Rao</td>
+            <td><a href="mailto:kamal@example.com">kamal@example.com</a></td>
+            <td>Admin</td>
+            <td>
+              <form action="#" method="post" style="display:inline">
+                <input type="hidden" name="user" value="U1001">
+                <button type="submit" name="action" value="edit">Edit</button>
+                <button type="submit" name="action" value="suspend">Suspend</button>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>U1002</td>
+            <td>Meera Singh</td>
+            <td><a href="mailto:meera@example.com">meera@example.com</a></td>
+            <td>Editor</td>
+            <td>
+              <form action="#" method="post" style="display:inline">
+                <input type="hidden" name="user" value="U1002">
+                <button type="submit" name="action" value="edit">Edit</button>
+                <button type="submit" name="action" value="suspend">Suspend</button>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <!-- Settings -->
+    <section id="settings" aria-labelledby="settings-heading">
+      <h3 id="settings-heading">System Settings</h3>
+
+      <form action="#" method="post" aria-label="System settings">
+        <fieldset>
+          <legend>Maintenance</legend>
+          <label for="maintenance">Enable maintenance mode</label>
+          <input id="maintenance" name="maintenance" type="checkbox">
+
+          <label for="timezone">Timezone</label>
+          <select id="timezone" name="timezone">
+            <option value="Asia/Kolkata">Asia/Kolkata</option>
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">America/New_York</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Backup</legend>
+          <label for="backup">Last backup</label>
+          <input id="backup" name="last_backup" type="datetime-local">
+          <button type="submit" name="save">Save settings</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Help -->
+    <section id="help" aria-labelledby="help-heading">
+      <h3 id="help-heading">Help & Documentation</h3>
+      <details>
+        <summary>How to create a report</summary>
+        <p>Go to Reports → Create custom report. Choose the type and include the data you need.</p>
+      </details>
+      <details>
+        <summary>How to export users</summary>
+        <p>Go to Users → Export and choose CSV or XLSX.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><small>&copy; 2025 Acme Analytics. All rights reserved.</small></p>
+    <p><small>Version: <code>1.0.0</code></small></p>
+  </footer>
+
+  <!-- Accessibility helper: skip link -->
+  <p><a href="#overview">Skip to main content</a></p>
+
+</body>
+</html>
