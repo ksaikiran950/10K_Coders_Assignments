@@ -1,0 +1,39 @@
+K SAI KIRAN
++91 7097213098 | Hyderabad, India | ksaikiran950@gmail.com | LinkedIn/k-saikiran | GitHub/ksaikiran950
+Objective:
+Aspiring Software Engineer  with a strong foundation in Python, SQL, and Full Stack development. Seeking an entry-level role to apply technical skills and problem-solving abilities, contribute to innovative projects, and grow within a dynamic, collaborative environment.
+Education
+Nalla Malla Reddy Engineering College, Hyderabad                                                                                                2021 - 2025   B-Tech CSE (Artificial Intelligence and Data Science)		                                                                        CGPA: 8.36 Telangana State Residential Junior College                                                                                               2019  - 2021     Intermediate		                                                                                                                                                Score: 98.6%
+Technical Skills
+•	Languages:				Python, SQL, JavaScript, HTML, CSS.
+•	Technologies:		 	HTML, CSS, Django.
+•	Tools:				Git, GitHub, MY SQL, VS Code, MS-Office, Power BI.
+Projects
+
+Attend Ease: Streamlining Online Attendance Management System
+•	Built an efficient online attendance management platform with real-time tracking and reporting.
+•	Enabled secure login and role-based access for admins, faculty, and students.
+•	Reduced manual errors by 90% and improved efficiency in academic settings.
+Dual-Factor Worm Detection Based on Signature & Anomaly
+•	Built a hybrid threat detection system using signature-based and anomaly-based techniques.
+•	Analyzed PCAP network traffic with Python and ML algorithms to identify internet worms.
+•	Achieved 94% detection accuracy with very low false positives.
+Internships/Trainings
+Data Analytics Program Trainee | Geeks for Geeks                                                                              March 2025 - May 2025
+•	Enhancing proficiency in data manipulation, visualization, and statistical analysis.
+•	Developed and delivered an insightful Power BI dashboard on sales data, providing key business insights.
+•	Learning industry-standard ETL processes, SQL queries, and Power BI dashboards.
+Full Stack Web Developer Intern | Gwing Software Technologies                                                           Aug 2024 - Oct 2024
+•	Developed and maintained full-stack web applications, focusing on front-end UI/UX and back-end API development.
+Certifications
+•	Data Science using Python – NPTEL (Swayam)
+•	4-Star Silver Level Badge in SQL – HackerRank
+•	Data Analytics and Visualization Job Simulation – Forage
+•	Python Essentials – Cisco
+•	Summer AI Internship – Swecha
+
+
+CREATE A DESCRIPTION AND ADD METRICS IN DESCRIPTION IN 4 TO 5 BULLLET POINTS
+
+
+

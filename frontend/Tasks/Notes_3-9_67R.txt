@@ -1,0 +1,162 @@
+date:3-9-25
+		functions in python:  
+
+1.built-in func:
+	functions which are already defined by python developers...
+
+
+2.user defined func:
+	func which are defined by end users by using def....
+----------------------------------------------------------------
+String built-in functions:
+
+ Case conversion methods:
+
+1. lower():
+
+ which is used to convert upper case to lower case...
+
+syntax:
+ s="INPUt" o/p: "input"
+
+	s.lower()
+
+
+2. upper():
+
+ which is used to convert lower case to upper case...
+
+syntax:
+
+ s="input" o/p: "INPUT"
+
+	s.upper()
+
+
+3.capitalize():
+which is used to convert lower to upper case of frst char of a string...
+
+syntax:
+
+s.capitlize()
+
+
+4.title():
+which is used to upper case of every frst char of words in a sentence.....
+
+syntax:
+
+s.title()
+
+
+5.swapcase():
+
+which is used to convert lower to upper and also upper to lower case in a string....
+
+sRaVaN ---> SrAvAn
+
+Syntax:
+
+s.swapcase()
+
+
+---------------------------------
+ Trimming and replacing methods
+
+6.Strip():
+func used to remove excess spaces at starting and ending of a string...
+
+"   Sravan   "---> "Sravan"
+syntax:
+
+s.strip()
+
+
+7.lstrip():
+func used to remove excess spaces at starting of a string...
+
+syntax:
+"   Sravan   "--> "Sravan   "
+s.lstrip()
+
+
+8.rstrip():
+func used to remove excess spaces at ending of a string...
+
+syntax:
+"   Sravan   "--> "   Sravan"
+
+s.rstrip()
+
+
+9.replace():
+func used to replace a specific word or char....
+
+
+syntax:
+
+var.replace("old","new")
+
+s="iam a java trainer"--->"iam a python trainer"
+
+s.replace("java","python")
+-----------------------------------------------
+
+10.count():
+func used to get count of a specific char in a string.....
+
+syntax:
+var.count("char")
+
+s="aaabbbaaabbbbbcccc"
+a----> 6
+s.count('a')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
