@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sample Wikipedia-style Page — Formatting Tags</title>
+</head>
+<body>
+  <!-- Title -->
+  <header>
+    <h1>Python (programming language)</h1>
+    <p><small>From <em>Wikipedia</em>, the free encyclopedia</small></p>
+    <hr>
+  </header>
+
+  <!-- Quick info / infobox (table) -->
+  <aside>
+    <table border="1" cellpadding="4" summary="Infobox">
+      <caption><strong>Quick facts</strong></caption>
+      <tbody>
+        <tr>
+          <th scope="row">Paradigm</th>
+          <td>Multi-paradigm: <em>object-oriented</em>, <em>imperative</em>, <em>functional</em></td>
+        </tr>
+        <tr>
+          <th scope="row">First appeared</th>
+          <td>1991</td>
+        </tr>
+        <tr>
+          <th scope="row">Designed by</th>
+          <td><strong>Guido van Rossum</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">Typing discipline</th>
+          <td><abbr title="Duck typing with optional static typing">Duck, dynamic</abbr>, optional <var>static typing</var></td>
+        </tr>
+      </tbody>
+    </table>
+  </aside>
+
+  <!-- Table of Contents -->
+  <nav aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#references">References</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- Introduction -->
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>
+        <strong>Python</strong> is a high-level, general-purpose programming language.
+        It emphasizes <em>readability</em> and a syntax that allows programmers to express
+        concepts in fewer lines of code than might be used in languages such as C++ or Java.
+      </p>
+
+      <p>
+        The language's core philosophy is summarized in the aphorism:
+        <q>Readability counts.</q>
+      </p>
+
+      <blockquote>
+        <p>
+          "Beautiful is better than ugly. Simple is better than complex."
+        </p>
+        <footer>— <cite>The Zen of Python</cite></footer>
+      </blockquote>
+    </section>
+
+    <hr>
+
+    <!-- History -->
+    <section id="history">
+      <h2>History</h2>
+      <p>
+        Python was conceived in the late 1980s as a successor to the ABC language and
+        first released in <strong>1991</strong>. The creator, <cite>Guido van Rossum</cite>,
+        aimed to make a language that was easy to read and use.
+      </p>
+
+      <dl>
+        <dt>1991</dt>
+        <dd>Initial public release (version 0.9.0).</dd>
+        <dt>2000</dt>
+        <dd>Python 2.0 released — introduced list comprehensions and garbage collection.</dd>
+        <dt>2008</dt>
+        <dd>Python 3.0 released — breaking changes to improve consistency.</dd>
+      </dl>
+    </section>
+
+    <hr>
+
+    <!-- Features -->
+    <section id="features">
+      <h2>Features</h2>
+      <p>Notable features include:</p>
+      <ul>
+        <li><strong>Indentation-based blocks</strong> — code blocks defined by indentation.</li>
+        <li><em>First-class functions</em> and <code>lambda</code> expressions.</li>
+        <li>Comprehensive standard library (<code>batteries included</code>).</li>
+        <li>Cross-platform portability (<kbd>Windows</kbd>, <kbd>macOS</kbd>, <kbd>Linux</kbd>).</li>
+      </ul>
+
+      <p>
+        Common abbreviations you will see:
+        <abbr title="Application Programming Interface">API</abbr>,
+        <abbr title="Integrated Development Environment">IDE</abbr>.
+      </p>
+
+      <p>
+        Example of an inline code variable: the mathematical constant is written as <code>pi = 3.14159</code>.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Example with preformatted code -->
+    <section id="example">
+      <h2>Example</h2>
+      <p>Simple Python function (formatted with <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code>):</p>
+
+      <pre><code>def greet(name):
+    """Return a greeting for name."""
+    return f"Hello, {name}!"
+
+print(greet("World"))  # prints: Hello, World!
+</code></pre>
+
+      <p>Use of <code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code> for mathematical notation:</p>
+      <p>Euler's identity: <var>e</var><sup>iπ</sup> + 1 = 0</p>
+      <p>Chemical example: H<sub>2</sub>O</p>
+    </section>
+
+    <hr>
+
+    <!-- Misc formatting examples -->
+    <section id="formatting-examples">
+      <h2>Formatting examples</h2>
+
+      <p><strong>Bold</strong>, <em>italic</em>, and <small>fine print</small> text.</p>
+
+      <p>
+        Keyboard input: press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+        Variable name example: <var>total_count</var>.
+      </p>
+
+      <p>
+        Citation example: As described by the Python Software Foundation, Python is "an
+        interpreted, high-level and general-purpose programming language". <cite>PSF</cite>
+      </p>
+
+      <p>
+        Inline mathematical notation with <code>&lt;code&gt;</code> tag: <code>sum([1, 2, 3])</code> =&gt; <code>6</code>.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- References -->
+    <section id="references">
+      <h2>References</h2>
+      <ol>
+        <li><cite>Van Rossum, Guido. "History of Python."</cite></li>
+        <li><cite>Python Software Foundation. "About Python."</cite></li>
+        <li><cite>Python Documentation. "The Python Language Reference."</cite></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p><small>Retrieved on 2025. This is a sample page demonstrating HTML formatting tags.</small></p>
+    <p>&copy; 2025 — Sample Wiki</p>
+  </footer>
+</body>
+</html>

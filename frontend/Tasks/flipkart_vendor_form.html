@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipkart Vendor Registration Form</title>
+</head>
+<body>
+
+    <h1 align="center">Flipkart Vendor Registration Form</h1>
+    <hr>
+
+    <form>
+        <h3>Personal Details</h3>
+        <label>Full Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email ID:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" maxlength="10" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <h3>Business Details</h3>
+        <label>Business Name:</label>
+        <input type="text" name="business" required><br><br>
+
+        <label>GST Number:</label>
+        <input type="text" name="gst" required><br><br>
+
+        <label>PAN Number:</label>
+        <input type="text" name="pan" required><br><br>
+
+        <label>Business Type:</label>
+        <select name="business_type">
+            <option>Individual</option>
+            <option>Private Limited</option>
+            <option>LLP</option>
+            <option>Partnership</option>
+        </select><br><br>
+
+        <h3>Bank Details</h3>
+        <label>Account Holder Name:</label>
+        <input type="text" name="acc_holder"><br><br>
+
+        <label>Account Number:</label>
+        <input type="number" name="acc_number"><br><br>
+
+        <label>IFSC Code:</label>
+        <input type="text" name="ifsc"><br><br>
+
+        <h3>Categories You Want to Sell</h3>
+        <input type="checkbox" name="category" value="Electronics"> Electronics
+        <input type="checkbox" name="category" value="Fashion"> Fashion
+        <input type="checkbox" name="category" value="Home"> Home
+        <input type="checkbox" name="category" value="Grocery"> Grocery
+        <input type="checkbox" name="category" value="Sports"> Sports <br><br>
+
+        <h3>Agreement</h3>
+        <input type="radio" name="agreement" value="agree"> I agree to Flipkart Terms & Conditions
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+    <footer>2025 10K coders</footer>
+
+</body>
+</html>

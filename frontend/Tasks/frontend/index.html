@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>h1{ color: blue;}
+        .parent h2+h1{ color: orange;}
+        h1+h2 {background-color: red;}
+        h1~h3 { font-size:xx-large;
+        color: aqua;
+        font-style: italic;
+                }
+        .parent .child>h1{color: violet;}
+        .child h1+p{background-color: brown;}
+        .child * {color: chartreuse;}
+        .child p~p{font-family: cursive;}
+        .child p+h2{color: chocolate;}
+        .parent>p{font-weight: 400;
+        background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <h1>Arey Entra edi</h1>
+    <h2>Enjoy pandago</h2>
+    <h1>Sare le paduko inka</h1>
+    <h3>Evar raa meerantha</h3>
+    <div class="child">
+        <h1>wall</h1>
+        <p>Sairam Sairam</p>
+        <p>Karma ra babu</p>
+        <h2>Eve thaginchukunte manchidhi</h2>
+    </div>
+    <p>Sare sare ley eno eno anukuntam ani jaruguthaya enti</p>
+    </div>
+</body>
+</html>
+
+<!-- task02 -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food & Drink Menu</title>
+</head>
+<body>
+    <div class="parent">
+        <h1 class="main-title">Gourmet Menu</h1>
+        <h2>Appetizers</h2>
+        <h1 class="special">Truffle Risotto</h1>
+        <h2>Seafood Salad</h2>
+        <h5>Chef's Recommendation</h5>
+
+        <div class="child">
+            <p>Classic Bruschetta</p>
+            <h5>Fresh Oysters</h5>
+            <h2>Clam Chowder</h2>
+            <ul>
+                <li>Garlic Bread</li>
+                <li>Extra Cheese</li>
+            </ul>
+        </div>
+
+        <p>Seasonal Fruit Tart</p>
+        <h2>Dessert Specials</h2>
+
+        <h3>Chocolate Lava Cake</h3>
+        <p class="highlight">Warm, gooey center with vanilla ice cream.</p>
+
+        <h3>Crème Brûlée</h3>
+        <p>Classic French dessert with caramelized sugar crust.</p>
+
+        <div class="extra">
+            <h2>Beverages</h2>
+            <h4>Coffee</h4>
+            <p>Espresso, Latte, Cappuccino</p>
+            <h4>Tea</h4>
+            <p>Green, Earl Grey, Chamomile</p>
+            <h4>Soft Drinks</h4>
+            <p>Cola, Lemonade, Ginger Ale</p>
+        </div>
+
+    </div>
+</body>
+</html>
