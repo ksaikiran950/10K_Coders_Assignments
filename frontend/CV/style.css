@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-solid {
+  color: #009688;
+}
+
+.container-left {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: 450px;
+  margin: 20px;
+  box-shadow: 0 0 10px gray;
+}
+
+.container-left img {
+  position: relative;
+}
+
+.container-left h2 {
+  position: absolute;
+  color: black;
+  top: 210px;
+  left: 40px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.details {
+  padding-left: 20px;
+}
+
+.details i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.details p {
+  color: gray;
+}
+
+hr {
+  margin: 20px;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.skills {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: gray;
+}
+
+.skills i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  overflow: hidden; /* keeps inner bar rounded */
+}
+
+.progress {
+  height: 20px;
+  background-color: #009688;
+  text-align: center;
+  padding-right: 10px;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 25px;
+  transition: width 0.5s ease; /* smooth animation */
+}
+
+.languages {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  color: grey;
+}
+
+.container-right-top {
+  position: absolute;
+  top: 20px;
+  left: 490px;
+  width: 900px;
+  padding-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px gray;
+}
+
+h2 {
+  font-size: 30px;
+  color: grey;
+  font-weight: 400;
+}
+
+h2 i {
+  margin-right: 20px;
+}
+
+h5 {
+  font-size: 20px;
+  color: grey;
+  font-weight: 400;
+}
+
+.experience {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0;
+}
+
+.experience i {
+  margin-right: 10px;
+}
+
+.experience p {
+  color: #009688;
+  font-size: 17px;
+}
+
+.experience span {
+  background-color: #009688;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container-right-bottom {
+  position: absolute;
+  top: 660px;
+  left: 490px;
+  width: 900px;
+  padding-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px gray;
+}
+
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #009688;
+  color: white;
+  text-align: center;
+}
+.certificate {
+  position: absolute;
+  top: 700px;
+  left: 490px;
+  width: 900px;
+
+  padding-left: 20px;
+  margin-right: 20px;
+  margin-top: 550px;
+  box-shadow: 0 0 10px gray;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
