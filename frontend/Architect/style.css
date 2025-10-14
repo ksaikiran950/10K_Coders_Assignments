@@ -1,0 +1,114 @@
+.hero-image {
+  background-image: url('https://www.w3schools.com/w3images/architect.jpg'); 
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-family: Arial, sans-serif;
+}
+.logo {
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-style:inherit;
+}
+.card1{
+    margin-left: 850px; ;
+}
+
+.card{
+    border: 1px solid black;
+    position:sticky;
+    top: 0;border: 1px solid black;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+}
+
+#image{
+    width: 100%;
+}
+.info1{
+    margin-left: 950px;
+}
+.info2{
+    margin-left:30px;
+}
+.info3{
+    margin-left: 30px;
+}
+.project-container{
+    height: 100%;
+    width: 100%;
+}
+.view{
+    width: 24%;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+
+}
+.house-name{
+    background-color: black;
+    color: white;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+#view-image{
+    height: 100%;
+    width: 100%;
+}
+
+.about{
+    height: 100%;
+    width: 100%;
+}
+.profile{
+    /* border: 1px solid black; */
+    display: inline-block;
+    width: 24%;
+}
+.profile img{
+    width: 100%;
+}
+#contact{
+    background-color: rgb(244, 247, 250);
+}
+#contact:hover{
+    background-color: rgb(171, 199, 223);
+}
+button{
+    color: white;
+    background-color: black;
+}
+.image{
+    width: 100%;
+}
+
+footer{
+    height: 100px;
+    color: whitesmoke;
+    background-color: black;
+}
