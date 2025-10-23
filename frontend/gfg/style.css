@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #808b41;
+  color: white;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0fc7e7;
+  padding: 10px 40px;
+  position: relative;
+  
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #8d00a0;
+  cursor: pointer;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-item > a:hover {
+  color: #0073a0;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #1a1a1a;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  z-index: 10;
+  border-radius: 6px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown a:hover {
+  background-color: #222;
+  color: #009ba0;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+/* Search Bar */
+.search-box input {
+  background-color: #222;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 15px;
+  color: white;
+  width: 180px;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+/* Right icons */
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #0058a0;
+}

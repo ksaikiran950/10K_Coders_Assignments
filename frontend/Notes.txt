@@ -1,0 +1,25 @@
+flex-box prperties
+
+flex-direction: row column row-reverse column-reverse
+flex-wrap: wrap no-wrap wrap-reverse
+flex
+
+
+
+
+
+
+
+
+flex item properties:
+
+flex-items/child
+
+order: 0,positive , negative
+flex grow : 0 
+flex-shrink: 1
+flex-basis: 300px
+flex
+align-self : start end center
+
+

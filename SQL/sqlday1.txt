@@ -1,0 +1,5 @@
+sql - structured query language
+ sequel - structured english query language
+
+
+sql - (raymon f boyce and donalod d chamberlin)  (IBM employees)
