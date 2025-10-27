@@ -1,0 +1,87 @@
+HTML Concepts
+
+1. What is HTML?
+HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It defines the structure of content using elements and tags.
+
+2. HTML Structure:
+An HTML document is divided into two main parts:
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+
+3. Behaviour of Elements:
+- Block-level elements: Start on a new line and take full width (e.g., <div>, <p>, <h1>).
+- Inline elements: Do not start on a new line and only take as much width as needed (e.g., <span>, <a>, <b>).
+
+4. Types of Tags:
+- Container Tags: Have an opening and closing tag (e.g., <p>...</p>).
+- Empty Tags: Self-closing tags that don’t have content (e.g., <br>, <hr>, <img>).
+
+5. <br> and <hr>:
+- <br>: Inserts a line break.
+- <hr>: Inserts a horizontal line (used for separation).
+
+6. <p> Tag:
+Defines a paragraph in HTML.
+
+7. Headings (<h1> to <h6>):
+Used to define headings with decreasing importance from <h1> (most important) to <h6> (least important).
+
+8. Anchor Tags (<a>):
+Used to create hyperlinks.
+Example: <a href="https://www.google.com">Visit Google</a>
+
+9. Iframe:
+Used to embed another webpage within the current page.
+Example: <iframe src="https://www.example.com"></iframe>
+
+10. Target Attribute:
+Specifies where to open the linked document.
+- _self: Opens in the same tab.
+- _blank: Opens in a new tab.
+
+11. Bookmarking in HTML:
+Allows navigation to specific parts of the page using the id attribute.
+Example:
+<a href="#section1">Go to Section 1</a>
+<h2 id="section1">Section 1</h2>
+
+12. Lists:
+- Ordered List (<ol>) – numbered list.
+- Unordered List (<ul>) – bulleted list.
+- Definition List (<dl>) – term and description.
+
+13. Forms:
+Used to collect user input.
+Example:
+<form action="/submit" method="post">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+
+14. Tables:
+Used to display data in rows and columns.
+Example:
+<table border="1">
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>John</td><td>25</td></tr>
+</table>
+
+15. Multimedia:
+- <img> – Displays images.
+- <audio> – Embeds audio.
+- <video> – Embeds video.
+
+16. Formatting Tags:
+Used to style text.
+Examples:
+<b>Bold</b>, <i>Italic</i>, <u>Underline</u>, <mark>Highlight</mark>, <sup>Superscript</sup>, <sub>Subscript</sub>
+
+17. Semantic and Non-Semantic Tags:
+- Semantic Tags: Have a clear meaning (e.g., <header>, <footer>, <article>, <nav>).
+- Non-Semantic Tags: Do not indicate content meaning (e.g., <div>, <span>).
