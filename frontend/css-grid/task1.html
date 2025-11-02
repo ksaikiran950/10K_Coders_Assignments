@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-grid</title>
+    <style>
+        .parent{
+            background-color: black;
+            height: 100vh;
+            gap: 10px;
+            display: grid;
+            /* grid-template-columns:repeat(3,1fr); */
+            grid-template-areas: 
+            'child1 child2 child3'
+            'child4 child5 child6'
+            ;
+        }
+        .child1{
+            background-color: red;
+            grid-area: child1;
+            
+        }
+        .child2{
+            background-color: rgba(255, 145, 0, 0.767);
+            grid-area: child2;
+
+        }
+        .child3{
+            background-color:orange;
+            grid-area: child3;
+        }
+        .child4{
+            background-color: green;
+            grid-area: child4;
+        }
+        .child5{
+            background-color: rgba(5, 236, 5, 0.699);
+            grid-area: child5;
+        }
+        .child6{
+            background-color: rgb(21, 255, 0);
+            grid-area: child6;
+        }
+    </style>
+</head>
+<body>
+    <a href="main.html">Back to home page</a>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+    </div>
+</body>
+</html>
