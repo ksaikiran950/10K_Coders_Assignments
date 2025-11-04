@@ -3,70 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Doraemon Parallax on Body</title>
+    <style>
+        body{
+            background-image: url(https://th.bing.com/th/id/OIP.I-vfpNOPEq3wYNi19HQgSwHaFj?w=241&h=181&c=7&r=0&o=7&pid=1.7&rm=3);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+        .content1{
+            padding: 100px 30px;
+            margin: 50px auto;
+            width: 100%;
+            height: 700px;
+            border-radius: 15px;
+            background-image: url(https://4kwallpapers.com/images/wallpapers/doraemon-cartoon-tv-2880x1800-13790.png);
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+        }
+        h1 {
+      font-size: 2.0rem;
+      color: rgb(255, 0, 191);
+       text-align: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: rgb(255, 0, 170);
+       text-align: center;
+
+    }
+
+    </style>
 </head>
 <body>
-    <header>
-        <center><h1>Cartoon World !</h1></center>
-    </header>
-    <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#catogory">Catogories
-            <select name="" id="dropdown">
-                <option value="">Adventure</option>
-                <option value="">Comedy</option>
-                <option value="">Thriller</option>
-                <option value="">Love</option>
-            </select>
-        </a>
-        <!-- <a href="#contact">Contact</a> -->
-        <a href="#about" id="about">About</a>
-        <a href="/login.html" id="login">Login or Register</a>
-    </nav>
-    <div class="home"><h1>Home</h1>
-        <h2>Click Here -->  <a href="#table"> Explore More</a></h2>
-        <div class="show">
-            <h2>Doraemon</h2>
-            <img src="https://th.bing.com/th/id/R.5424dd179961208ad01ee234445cab04?rik=hzc17auMXoIyaA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fComic-Doraemon-Backgrounds.jpg&ehk=uFRWtZORfkbeDl4ETcM7xaK48EqP7raYD5BtguHffiw%3d&risl=&pid=ImgRaw&r=0" alt="">
-        </div>
-        <div class="show">
-            <h2>Ben 10</h2>
-            <img src="https://tse1.mm.bing.net/th/id/OIP.vi7k5tJPXTIMyBE4KfoMgAHaFP?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        </div>
-        <div class="show">
-            <h2>Pokemon</h2>
-            <img src="https://tse2.mm.bing.net/th/id/OIP.xwcPBY2JeCZEa1rs77tmtAHaJO?cb=12&pid=ImgDet&w=185&h=230&c=7&o=7&rm=3" alt="">
-        </div>
-        <div class="show">
-            <h2>Power Rangers</h2>
-            <img src="https://th.bing.com/th/id/R.e5e2134e5ada5efcded7c331bb8510b0?rik=ZweX%2bqM5N6fZXg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f07%2fHD-Power-Rangers-Backgrounds.jpg&ehk=2SkPAjkF1JS1SRjTFWWw7ertQCVdxbkuNU%2b2aKNu8ZQ%3d&risl=&pid=ImgRaw&r=0" alt="">
-        </div>
-        <div class="show">
-            <h2>Tom and Jerry</h2>
-            <img src="https://tse3.mm.bing.net/th/id/OIP.l6GR-H5MEdAUkogU01ZQ3gHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-        </div>
-        <div class="show">
-            <h2>Oggy and Cockroches</h2>
-            <img src="https://tse4.mm.bing.net/th/id/OIP.WVg-hGlP6LOpRosL0jCs6AHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h1>Cartoon World: The Art of Animated World!</h1>
+    <p>Join Doraemon and Nobita as they explore a world of laughter, friendship, and incredible inventions! Every episode brings a new gadget and a new lesson to learn.</p>
 
-        </div>
-        <div class="show">
-            <h2>Chota Bheem</h2>
-            <img src="https://www.teahub.io/photos/full/76-766592_chhota-bheem-cartoon-photographs-and-wallpapers-chota-bheem.jpg" alt="">
-        </div>
-        <div class="show">
-            <h2>Motu Patlu</h2>
-            <img src="https://wallpaperaccess.com/full/2036614.jpg" alt="">
-        </div>
-        <div class="show">
-            <h2>Kick batoski</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Kick_Buttowski_2.jpg" alt="">
-        </div>
+    <div class="content1">
+        <h1>Parallax Effect in Practice</h1>
+        <p>As you scroll, the background stays in place while the content moves that's the magic of <code>background-attachment: fixed</code></p>
     </div>
-    <footer>
-    <p>&copy; 2025 Cartoon World | All Rights Reserved</p>
-</footer>
+    <div class="content2">
+        <h1>Enjoy the Cartoon </h1>
+        <p>Doraemon is a blue robotic cat sent from the future to help Nobita Nobi, a kind but lazy boy. 
+  Using his futuristic gadgets from the “4D pocket,” Doraemon turns ordinary days into fun adventures filled with 
+  friendship, laughter, and valuable life lessons.</p>
+    </div>
 
 </body>
 </html>
