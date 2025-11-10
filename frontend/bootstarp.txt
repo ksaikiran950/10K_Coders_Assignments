@@ -1,0 +1,20 @@
+BOOTSTRAP
+
+STYLING FRAMEWORK
+
+twitter engineers
+
+5 th version present
+class
+
+predefined classes
+
+css and js
+3 ways 
+
+
+cdn - content delivery network
+cdn link -> head / body   link.script
+
+download
+npm
