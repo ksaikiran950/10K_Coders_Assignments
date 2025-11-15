@@ -19,9 +19,9 @@
 // console.log(person)
 
 
-let x=100;
-function demo(){
-    console.log(x);
-    let x=200;
-}
-demo();
+// let x=100;
+// function demo(){
+//     console.log(x);
+//     let x=200;
+// }
+// demo();

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRISM FLUX</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>PRISM FLUX - Digital Innovation Studio</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <!-- Loading Screen -->
     <div class="loader" id="loader">
         <div class="loader-content">
             <div class="loader-prism">
@@ -14,11 +16,12 @@
                 <div class="prism-face"></div>
                 <div class="prism-face"></div>
             </div>
-            <div id="refract">Refracting Reality ...</div>
+            <div style="color: var(--accent-purple); font-size: 18px; text-transform: uppercase; letter-spacing: 3px;">Refracting Reality...</div>
         </div>
     </div>
-    <!-- navigation -->
-     <header class="header" id="header">
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
         <nav class="nav-container">
             <a href="#home" class="logo">
                 <div class="logo-icon">
@@ -31,54 +34,60 @@
                     <span class="flux">FLUX</span>
                 </span>
             </a>
-
-            <ul class="nav-menu" id="navmenu">
+            
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#stats" class="nav-link">Metrics</a></li>
                 <li><a href="#skills" class="nav-link">Arsenal</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="menu-toggle" id="menutoggle">
+            
+            <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </nav>
-     </header>
+    </header>
 
-     <section class="hero" id="home">
+    <!-- Hero Section with 3D Carousel -->
+    <section class="hero" id="home">
         <div class="carousel-container">
-            <div class="carousel" id="carousel">
-
-            </div>
+            <div class="carousel" id="carousel"></div>
+            
             <div class="carousel-controls">
-                <button class="carousel-btn" id="prevBtn"></button>
-                <button class="carousel-btn" id="nextBtn"></button>
+                <button class="carousel-btn" id="prevBtn">‹</button>
+                <button class="carousel-btn" id="nextBtn">›</button>
             </div>
+            
             <div class="carousel-indicators" id="indicators"></div>
         </div>
-     </section>
-     <section class="philosophy-section" id="about">
+    </section>
+
+    <section class="philosophy-section" id="about">
         <div class="philosophy-container">
             <div class="prism-line"></div>
-
+            
             <h2 class="philosophy-headline">
                 Refracting Ideas<br>Into Reality
             </h2>
+            
             <p class="philosophy-subheading">
                 At PRISM FLUX, we transform complex challenges into elegant solutions through the convergence of 
                 cutting-edge technology and visionary design. Every project is a spectrum of possibilities 
                 waiting to be discovered.
             </p>
-
+            
             <div class="philosophy-pillars">
                 <div class="pillar">
                     <div class="pillar-icon">💎</div>
                     <h3 class="pillar-title">Innovation</h3>
                     <p class="pillar-description">
-                        Breaking boundaries with revolutionary approaches that redefine industry standards and push the limits of what's possible. Elevate your designs with premium vector stickers from <a href="https://www.vectorsticker.com/" rel="nofollow" target="_blank">VectorSticker</a> </p>
+                        Breaking boundaries with revolutionary approaches that redefine industry standards and push the limits of what's possible. Elevate your designs with premium vector stickers from <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a>.
+                    </p>
                 </div>
+                
                 <div class="pillar">
                     <div class="pillar-icon">🔬</div>
                     <h3 class="pillar-title">Precision</h3>
@@ -95,12 +104,12 @@
                     </p>
                 </div>
             </div>
-            <div class="philosophy-particles" id="particles">
-
-            </div>
+            
+            <div class="philosophy-particles" id="particles"></div>
         </div>
-     </section>
-     <!-- Stats Section with Content -->
+    </section>
+
+    <!-- Stats Section with Content -->
     <section class="stats-section" id="stats">
         <div class="section-header">
             <h2 class="section-title">Performance Metrics</h2>
@@ -138,7 +147,6 @@
         </div>
     </section>
 
-    <!-- Enhanced Skills Section - Technical Arsenal -->
     <section class="skills-section" id="skills">
         <div class="skills-container">
             <div class="section-header">
@@ -154,9 +162,7 @@
                 <div class="category-tab" data-category="emerging">Emerging Tech</div>
             </div>
 
-            <div class="skills-hexagon-grid" id="skillsGrid">
-                <!-- Hexagonal skill items will be generated by JavaScript -->
-            </div>
+            <div class="skills-hexagon-grid" id="skillsGrid"></div>
         </div>
     </section>
 
@@ -169,11 +175,11 @@
         
         <div class="contact-container">
             <div class="contact-info">
-                <a href="https://maps.google.com/?q=Silicon+Valley+CA+94025" target="_blank" class="info-item">
+                <a href="https://maps.app.goo.gl/mYftRKhTZiXDfFoo6" target="_blank" class="info-item">
                     <div class="info-icon">📍</div>
                     <div class="info-text">
                         <h4>Location</h4>
-                        <p>Silicon Valley, CA 94025</p>
+                        <p>KPHB, PHASE 1 500072</p>
                     </div>
                 </a>
                 
@@ -181,15 +187,15 @@
                     <div class="info-icon">📧</div>
                     <div class="info-text">
                         <h4>Email</h4>
-                        <p>hello@prismflux.io</p>
+                        <p>ABC @gmail.com</p>
                     </div>
                 </a>
                 
-                <a href="tel:+15551234567" class="info-item">
+                <a href="tel:+919876543210" class="info-item">
                     <div class="info-icon">📱</div>
                     <div class="info-text">
                         <h4>Phone</h4>
-                        <p>+1 (555) 123-4567</p>
+                        <p>+91 9876543210</p>
                     </div>
                 </a>
                 
@@ -248,7 +254,7 @@
                 </p>
                 <div class="footer-social">
                     <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">x</a>
                     <a href="#" class="social-icon">in</a>
                     <a href="#" class="social-icon">ig</a>
                 </div>
@@ -287,13 +293,13 @@
         
         <div class="footer-bottom">
             <div class="copyright">
-                © 2026 PRISM FLUX. All rights reserved.
+                © 2025 PRISM FLUX. All rights reserved.
             </div>
             <div class="footer-credits">
-                Designed by <a href="https:mailto:ksaikiran950@gmail.com" rel="nofollow" target="_blank">K SAI KIRAN</a>
+                Designed by <a href="https://mailto:ksaikiran950@gmail.com" rel="nofollow" target="_blank">K SAI KIRAN </a>
             </div>
         </div>
     </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
