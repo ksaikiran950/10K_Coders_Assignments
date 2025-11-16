@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    border: 0;
+
+}
+
+.navbar{
+    display: flex;
+    margin: 50px;
+    
+
+}
+.navigation{
+    display: flex;
+    margin-left: 400px;
+    gap: 60px;
+    
+}
+.home{
+    height: 300px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-image: url(https://wallpaperaccess.com/full/1166676.jpg);
+}
+.container{
+    display: flex;
+    margin: 50px;
+
+}
+.btn{
+    display: flex;
+    gap: 10px;
+}
+
+.footer{
+    height: 50px;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+}
+.right{
+    margin: 50px;
+}
+.made{
+    margin-left: 550px;
+}
