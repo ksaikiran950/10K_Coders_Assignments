@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        img{
+            width: 200px;
+            border-radius: 10px;
+        }
+        button{
+            border-radius: 10px;
+            border: 1px solid red;
+        }
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Change Background Color</h1>
+    <img src="https://www.australiangeographic.com.au/wp-content/uploads/2023/02/shutterstock_643099915-edited-scaled.jpg" alt="">
+    <br>
+    <button onclick="change('green')" >Green </button>
+    <button onclick="change('red')" >Red</button>
+    <button onclick="change('blue')" >Blue</button>
+    <button onclick="change('black')" ></button> -->
+
+    <script>
+        let heading_ele=document.createElement('h1')
+        heading_ele.innerHTML='Change Background Color'
+        
+        let image=document.createElement('img')
+        image.src='https://www.australiangeographic.com.au/wp-content/uploads/2023/02/shutterstock_643099915-edited-scaled.jpg'
+
+        document.body.append(heading_ele,image  )
+
+
+        let arr=['green','red','yellow','blue']
+
+        for(let i=0;i<=3;i++){
+            let btn=document.createElement("button")
+            btn.innerHTML=arr[i]
+            btn.onclick=function (){
+                document.body.style.backgroundColor=arr[i]
+                console.log(arr[i])
+            }
+            document.body.appendChild(btn)
+
+        }
+
+
+
+
+        
+        
+    </script>
+</body>
+</html>

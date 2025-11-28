@@ -82,7 +82,7 @@
             }
         }
 
-        // Initialize particles for philosophy section
+        // Initialize particles for desc section
         function initParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 15;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let heading_ele=document.createElement("h1")
+        heading_ele.innerHTML="Change the Color"
+        document.body.append(heading_ele)
+        arr=['red','blue','green','orange']
+        
+        for(let i=0;i<4;i++){
+            let btn=document.createElement("button")
+            btn.style.backgroundColor=arr[i]
+            btn.id=i
+            btn.innerHTML=arr[i]
+
+            let rem_btn=document.createElement('button')
+            rem_btn.innerHTML="Remove"
+            rem_btn.style.color=arr[i]
+            rem_btn.style.border=`1px solid ${arr[i]}`
+
+
+            rem_btn.onclick=function(){
+                let curr_ele=document.getElementById(i)
+                console.log(curr_ele.parentNode)
+                console.log(card.removeChild(curr_ele))
+                
+            }
+            
+            
+            let card=document.createElement("div")
+            card.append(btn,rem_btn) 
+            document.body.append(card)   
+        }
+
+
+
+
+        
+        
+        
+
+        
+        
+        
+    </script>
+</body>
+</html>

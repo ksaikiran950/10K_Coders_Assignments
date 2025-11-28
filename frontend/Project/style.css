@@ -1,4 +1,4 @@
-@charset "utf-8";
+/* @charset "utf-8"; */
 * {
 	margin: 0;
 	padding: 0;
@@ -583,8 +583,8 @@ body::after {
 	transform: scale(1.3);
 }
 
-/* NEW: Prism Philosophy Section */
-.philosophy-section {
+/* NEW: Prism desc Section */
+.desc-section {
 	padding: 120px 30px;
 	background: linear-gradient(180deg,
 			var(--primary-black) 0%,
@@ -594,7 +594,7 @@ body::after {
 	overflow: hidden;
 }
 
-.philosophy-container {
+.desc-container {
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
@@ -638,7 +638,7 @@ body::after {
 	}
 }
 
-.philosophy-headline {
+.desc-headline {
 	font-size: 56px;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -672,7 +672,7 @@ body::after {
 	}
 }
 
-.philosophy-subheading {
+.desc-subheading {
 	font-size: 20px;
 	color: var(--text-secondary);
 	max-width: 700px;
@@ -681,7 +681,7 @@ body::after {
 	font-weight: 300;
 }
 
-.philosophy-pillars {
+.desc-pillars {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 50px;
@@ -805,7 +805,7 @@ body::after {
 }
 
 /* Particle Effect Background */
-.philosophy-particles {
+.desc-particles {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1462,7 +1462,7 @@ a.info-item {
 		font-size: 13px;
 	}
 
-	.philosophy-pillars {
+	.desc-pillars {
 		grid-template-columns: 1fr;
 	}
 
@@ -1574,7 +1574,7 @@ a.info-item {
 		height: 10px;
 	}
 
-	.philosophy-headline {
+	.desc-headline {
 		font-size: 36px;
 	}
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a=30;    // redeclare,reassign, functional scope, hoisted  memory assigned - undefined
+        // console.log(a);
+
+        // a=56;
+        // console.log(a);
+
+        // let b=49;  // can't redeclare, can reassign, block scope, hoisted memory unavailable , reference error 
+        // console.log(b)
+
+        // b=50;      
+        // console.log(b)
+
+        // const c=90;     // can't redeclare, can't reassign , block scope , UNV error
+        // console.log(c)
+        
+        // {
+        //     var a=80; // functional scope
+        //     let b=69;  // block scope
+
+        // }
+        // console.log(a); // can be accessed outside the block
+        // console.log(b); // cant access outside the block
+
+        // function access(){
+        //     var d=99;
+        // }
+        // access()
+        // console.log(a)   // can't access outside the function, var is  functional scoped 
+
+        let s="text"
+        console.log(typeof(s));
+        let n=50;
+        console.log(typeof(n));
+        let t=true;
+        console.log(typeof(t));
+        let g=null;
+        console.log(typeof(g));
+        let q;
+        console.log(typeof(q));
+        let u=undefined;
+        console.log(typeof(u))
+
+        let person={name:"kiran",age:21};
+        console.log(typeof(person));
+
+        let arr=['a',"b"]
+        console.log(typeof(arr))
+
+        let B=1234n;
+        console.log((B));          // Returns bigint
+        const x=Symbol();      // Returns symbol
+        console.log(typeof(x))
+    </script>
+</body>
+</html>
