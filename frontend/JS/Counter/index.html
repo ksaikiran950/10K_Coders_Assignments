@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 600px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            background-color: rgb(158, 140, 175);
+        }
+        h1{
+            color: blue;
+        }
+        #inc{
+            border: 3px solid green;
+            border-radius: 10px;
+            padding: 4px 14px;
+            color: green;
+            font-size: x-large;
+            
+        }
+        #dec{
+            border: 3px solid red;
+            border-radius: 10px;
+            padding: 4px 14px;
+            color: red;
+            font-size: x-large;
+        }
+        #res{
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 4px 14px;
+            color: black;
+            font-size: x-large;
+        }
+        #count{
+            font-size: xx-large;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Counter</h1>
+    <p id="count">0</p>
+    <div>
+        <button onclick="onDecrement()" id="dec">-</button>
+        <button onclick="onReset()" id="res">Reset</button>
+        <button onclick="onIncrement()"id="inc">+</button>
+    </div>
+    </div>
+    <script>
+        let cur_ele=document.getElementById('count')
+        function onDecrement(){
+            cnt_ele=parseInt(cur_ele.innerHTML)-1
+            if(cnt_ele<0){
+                cur_ele.style.color="red"
+            }
+            else if(cnt_ele==0){
+                cur_ele.style.color='black'
+            }
+            cur_ele.innerHTML=cnt_ele
+        }
+        function onReset(){
+            cur_ele.innerHTML=0
+            cur_ele.style.color="black"
+        }
+        function onIncrement(){
+            cnt_ele=parseInt(cur_ele.innerHTML)+1
+            if(cnt_ele>0){
+                cur_ele.style.color="green"
+            }
+            else if(cnt_ele==0){
+                cur_ele.style.color='black'
+            }
+            cur_ele.innerHTML=cnt_ele
+        }
+    </script>
+</body>
+</html>

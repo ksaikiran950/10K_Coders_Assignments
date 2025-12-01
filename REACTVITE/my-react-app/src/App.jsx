@@ -1,8 +1,12 @@
+import './App.css';
+import StopWatch from './components/StopWatch/StopWatch';
+
+
 function App(){
-  return (
+  return(
     <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <StopWatch/></div>
   );
 }
+
 export default App;

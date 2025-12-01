@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .cards{
+            border: 1px solid black;
+            /* padding: 10px; */
+        }
+        button{
+            margin: 10px;
+            border-color: blue;
+            color: red;
+            }
+        #card-container{
+            border: 1px solid black;
+            height: 500px;
+            width: 600px;
+
+        }
+        #card1{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Cards</h1>
+    <div class="cards">
+        <button onclick="get_color('green')">Green</button>
+        <button onclick="get_color('yellow')">Yellow</button>
+        <button onclick="get_color('red')">Red</button>
+        <button onclick="get_color('orange')">Orange</button>
+        <button onclick="()=>{}">Clear All</button>
+    </div>
+    <div id="card-container">
+    </div>
+    <script>
+        let parent=document.getElementById("card-container")
+        let curr_ele=document.createElement('div')
+        curr_ele.id="card1"
+        function get_color(color){
+            console.log(color)
+            curr_ele.style.backgroundColor=color
+            console.log(parent.appendChild(curr_ele))
+
+        }
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
