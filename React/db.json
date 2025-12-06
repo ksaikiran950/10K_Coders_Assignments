@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "c030",
+      "username": "sai",
+      "email": "sai@gmail.com",
+      "password": "sai123"
+    }
+  ],
+  "todos": [
+    {
+      "id": "73fd",
+      "text": "add java"
+    },
+    {
+      "id": "2d2e",
+      "text": "add python",
+      "completed": false
+    },
+    {
+      "id": "2ffb",
+      "text": "add js",
+      "completed": false
+    }
+  ]
+}
