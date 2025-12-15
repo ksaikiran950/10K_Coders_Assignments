@@ -1,0 +1,273 @@
+========================================
+MYSQL STORED PROCEDURES & TRIGGERS NOTES
+========================================
+
+----------------------------------------
+STORED PROCEDURE (MySQL)
+----------------------------------------
+
+Definition:
+A stored procedure is a group of SQL statements
+stored in the MySQL database and executed using CALL.
+
+Why it is used:
+- Improves performance (precompiled execution)
+- Avoids writing repeated SQL queries
+- Better security (logic stored in DB)
+- Easy maintenance
+
+Where it is used:
+- Business logic
+- CRUD operations
+- Validation logic
+- Backend database operations
+
+Important MySQL keywords:
+DELIMITER, CREATE PROCEDURE, CALL, IN, OUT, INOUT
+
+----------------------------------------
+BASIC SYNTAX (MySQL)
+----------------------------------------
+
+DELIMITER //
+
+CREATE PROCEDURE procedure_name()
+BEGIN
+   SQL statements;
+END //
+
+DELIMITER ;
+
+Call procedure:
+CALL procedure_name();
+
+
+----------------------------------------
+TRIGGER (MySQL)
+----------------------------------------
+
+Definition:
+A trigger is a MySQL object that automatically runs
+when INSERT, UPDATE, or DELETE occurs on a table.
+
+Why it is used:
+- Audit logging
+- Auto data validation
+- Restrict operations
+- Maintain consistency
+
+Where it is used:
+- Prevent invalid data
+- Auto update fields
+- Track data changes
+
+Trigger timing:
+- BEFORE INSERT
+- AFTER INSERT
+- BEFORE UPDATE
+- AFTER UPDATE
+- BEFORE DELETE
+- AFTER DELETE
+
+----------------------------------------
+TRIGGER SYNTAX (MySQL)
+----------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER trigger_name
+BEFORE | AFTER INSERT | UPDATE | DELETE
+ON table_name
+FOR EACH ROW
+BEGIN
+   SQL statements;
+END //
+
+DELIMITER ;
+
+
+==================================================
+10 MYSQL STORED PROCEDURE & TRIGGER EXAMPLES
+==================================================
+
+----------------------------------------
+1. Stored Procedure: Display all users
+----------------------------------------
+
+DELIMITER //
+
+CREATE PROCEDURE get_users()
+BEGIN
+   SELECT * FROM users;
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+2. Stored Procedure: Get user by ID
+----------------------------------------
+
+DELIMITER //
+
+CREATE PROCEDURE get_user_by_id(IN uid INT)
+BEGIN
+   SELECT * FROM users WHERE id = uid;
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+3. Stored Procedure: Insert user
+----------------------------------------
+
+DELIMITER //
+
+CREATE PROCEDURE add_user(
+   IN uname VARCHAR(50),
+   IN uemail VARCHAR(100)
+)
+BEGIN
+   INSERT INTO users(name, email)
+   VALUES(uname, uemail);
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+4. Stored Procedure: Update email
+----------------------------------------
+
+DELIMITER //
+
+CREATE PROCEDURE update_email(
+   IN uid INT,
+   IN new_email VARCHAR(100)
+)
+BEGIN
+   UPDATE users
+   SET email = new_email
+   WHERE id = uid;
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+5. Stored Procedure: Delete user
+----------------------------------------
+
+DELIMITER //
+
+CREATE PROCEDURE delete_user(IN uid INT)
+BEGIN
+   DELETE FROM users WHERE id = uid;
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+6. Trigger: Prevent negative salary
+----------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER check_salary
+BEFORE INSERT ON employees
+FOR EACH ROW
+BEGIN
+   IF NEW.salary < 0 THEN
+      SET NEW.salary = 0;
+   END IF;
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+7. Trigger: After insert audit log
+----------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER insert_log
+AFTER INSERT ON employees
+FOR EACH ROW
+BEGIN
+   INSERT INTO emp_log(emp_id, action)
+   VALUES(NEW.id, 'INSERT');
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+8. Trigger: Before delete restriction
+----------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER prevent_delete
+BEFORE DELETE ON employees
+FOR EACH ROW
+BEGIN
+   SIGNAL SQLSTATE '45000'
+   SET MESSAGE_TEXT = 'Deletion not allowed';
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+9. Trigger: Log updates
+----------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER update_log
+AFTER UPDATE ON employees
+FOR EACH ROW
+BEGIN
+   INSERT INTO emp_log(emp_id, action)
+   VALUES(NEW.id, 'UPDATE');
+END //
+
+DELIMITER ;
+
+
+----------------------------------------
+10. Trigger: Auto update timestamp
+----------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER update_timestamp
+BEFORE UPDATE ON employees
+FOR EACH ROW
+BEGIN
+   SET NEW.updated_at = CURRENT_TIMESTAMP;
+END //
+
+DELIMITER ;
+
+
+==================================================
+
+==================================================
+
+Stored Procedure:
+- Executed manually using CALL
+- Accepts parameters
+- Used for reusable logic
+
+Trigger:
+- Executes automatically
+- Cannot be called manually
+- Used for automatic actions
+
+==================================================
+END OF MYSQL NOTES
+==================================================
