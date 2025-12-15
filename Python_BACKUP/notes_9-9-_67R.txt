@@ -1,0 +1,82 @@
+
+				date- 9/9/25
+10.popitem():
+
+To remove last updated key value pair...
+
+syntax:
+	dict_name.popitem()
+
+11 del :
+
+To remove particular key value pair 
+and to del entire dictionary...
+
+syntax:
+
+	del dict_name[key]
+	
+	del dict_name 
+
+12 zip():
+
+To convert 2 list into dictionary...
+
+keys= ["name","age","gender"]
+
+values = ["sai kiran" , 21 , "male"]
+
+syntax:
+	d=dict(zip(keys,values))
+
+
+Tuple built in funct:
+
+len():
+To find length of a tuple...
+syntax:
+	t = (1,2,3,5,7,4) --> 6
+
+	len(tuple_name)
+
+max():
+	To find largest num in a tuple...
+syntax:
+	max(tuple_name)
+	t = (1,2,3,5,7,4) --> 7
+
+
+min():
+To find smallest num in a tuple..
+syntax:
+	min(tuple_name)
+	t = (1,2,3,5,7,4) --> 1
+
+sum():
+To sum all num in a tuple...
+syntax:
+	sum(tuple_name)
+	t = (1,2,3,5,7,4) -->22
+count():
+To find freq of a particular element in a tuple...
+syntax:
+	tuple_name.count(ele)
+	
+	t = (1,2,3,5,7,4,2,2)
+		t.count(2) -->3 
+index():
+To find index of an element in a tuple...
+syntax:
+	tuple_name.index(ele)
+	t = (1,2,3,5,7,4)
+	t.index(5) -->3
+tuple():
+To convert iterable var into tuple...
+syntax:
+	var = tuple(list_name)
+
+num = [1,2,4,7,9]
+t = tuple(num)
+print(t)
+(1,2,4,7,9)
+

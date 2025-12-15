@@ -1,0 +1,53 @@
+1.solution:
+	pwd="Sravan"
+	ampt=3
+	for i in range(ampt):
+    		ip=input("pwd:")
+    		if ip==pwd:
+        	print("access granted!")
+       		 break
+
+	else:
+    		print("Too many attempts,access denied")
+
+
+
+2.
+       d={"name":"Sravan","age":45,"addr":"jeedimetla"}
+       swap={}
+
+       for key in d:
+    	val=d[key]
+    	swap[val]=key
+       print(swap)
+
+
+3.
+
+
+	l = [1, 2, 3, 4, 5, 6, 7,8,9,10]
+	chunk = 3
+	res=[]
+	for i in range(0,len(l),chunk):
+    		res.append(l[i:i+chunk])
+	print(res)
+
+4.
+
+	l=[[1,2,3],
+	  [4,5,6],
+	   [7,8,9]]
+	r=len(l)
+	c=len(l[0])
+	tot=0
+	for i in range(r):
+	   for j in range(c):
+	        if i==j:
+	            tot+=l[i][j]
+	        if j==r-i-1:
+	            tot+=l[i][j]
+
+	print(tot)
+
+
+	

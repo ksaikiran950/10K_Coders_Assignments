@@ -1,0 +1,141 @@
+		  							date: 6-9-25
+List built in func :
+
+
+1.index():
+  To find a particular index of an element in a list....
+syntax:
+	num = [10,34,54,32]
+
+	num.index(54)
+	o/p: 2
+-------------------------------------------------------------
+2.len():
+Used to get length of a list....
+
+syntax:
+	len(list_name)
+	o/p: integer_value
+--------------------------------------------------------------
+3.append():
+To insert or add an element to a list...
+
+syntax:
+	l=[1,2,3,4]
+	l.append(5)
+	o/p: 1 2 3 4 5
+             0 1 2 3 4
+-------------------------------------------------------------------
+4.insert():
+To add an element in particular position in a list....
+
+syntax:
+
+	l=[1,2,4,5]
+
+	l.insert(3,2)
+	o/p: 1 2 3 4 5
+----------------------------------------------------------------------
+5.extend():
+To another iterable var to a list....
+
+syntax:
+		list_name.extend(iterable_var)
+
+	l=[1,2,3]
+	listt=[4,5,6]
+	l.extend(listt)
+	o/p: 1 2 3 4 5 6
+--------------------------------------------------------------------------
+6. remove():
+To del or remove an element(value) in a list.....
+
+syntax:
+
+	list_name.remove(element_nm)
+	
+	l = [1,2,3,4]
+	l.remove(3)
+	o/p: 1 2 4
+------------------------------------------------------------------------------
+7.pop():
+To del or remove an element by using its index in a list.....
+
+syntax:
+	list_name.pop(index)
+
+	l=[23,34,45,56]
+	l.pop(1)
+	o/p: 23 45 56
+-----------------------------------------------------------------------------------------
+8.max():
+To get maximum element from a list....
+
+syntax:
+	max(list_name)
+
+---------------------------------------------------------------------------------
+9.min():
+To get minimum element from a list....
+
+syntax:
+	min(list_name)
+-----------------------------------------------------------------------------------
+10. count():
+To get count of particular element in a list....
+
+syntax:
+	list_name.count(element)
+
+	l = [1,2,2,3,4,2,5,2]
+	l.count(2)
+	o/p: 4
+---------------------------------------------------------------------------------
+11.sum():
+to total sum all elements of a list...
+
+syntax:
+	sum(list_name)
+------------------------------------------------------------------------
+12.clear():
+To del all elements of a list....
+
+syntax:
+	list_name.clear()
+	o/p: []
+-------------------------------------------------------------------------
+13.sort():
+num = [23,32,12,11,10,55]
+o/p: 10 11 12 23 32 55
+
+To sort elements in a list....
+
+syntax:
+	list_name.sort()   quick, merge
+att:
+     1. reverse  (by default reverse=False)
+
+	list decresing order:
+			    l.sort(reverse=True)
+     2. key :
+	     key=len  To get len wise soring...…
+	     l.sort(key=len)
+
+	l = ['apple','ball','enfield','dog','cat']
+
+	l.sort(key=len)
+
+	o/p:['dog', 'cat', 'ball', 'apple', 'enfield']
+---------------------------------------------------------------------------------
+14. copy():
+import copy  --> to perform shallow and deepcopy….
+
+shallow copy:
+	     if we perform any operations on copied list,it will be effect the org list...
+syntax:
+	s_c = copy.copy(original_list)
+
+deepcopy:
+	    if we perform any opr on copied list, it wont be effect the original list....
+syntax:
+	d_c = copy.deepcopy(original_list)

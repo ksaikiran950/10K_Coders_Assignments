@@ -1,0 +1,55 @@
+Hello Students,
+
+The Placement Team is conducting an exam on Thursday, 16-10-2025, based on the following topics:
+
+Topics to Prepare:
+
+1. Time & Space Complexity
+
+
+2. Recursion in DSA and Basic Recursive Problems
+
+
+3. Strings in DSA and String-related Problems
+
+
+4. Lists in DSA
+
+
+5. Binary Numbers
+
+
+6. Searching in DSA
+
+
+7. Sorting in DSA
+
+Bubble Sort
+
+Selection Sort
+
+Insertion Sort
+
+Quick Sort
+
+Merge Sort
+
+Sorting-related Problems
+
+
+
+
+🕕 Time: 6:00 PM – 7:30 PM
+🏢 Location: Office 4, 1st Floor, Classroom 2
+
+💻 Instructions:
+
+Attendance is mandatory for all students.
+
+Bring your laptop and charger.
+
+The exam will include 6 questions from the above topics.
+
+
+Prepare well and give your best! 
+All the best!
