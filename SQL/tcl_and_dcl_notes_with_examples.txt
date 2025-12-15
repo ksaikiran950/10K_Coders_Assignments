@@ -1,0 +1,227 @@
+========================================
+MYSQL TCL AND DCL NOTES
+========================================
+
+========================================
+TCL (TRANSACTION CONTROL LANGUAGE) – MySQL
+========================================
+
+Definition:
+TCL commands in MySQL are used to manage transactions.
+A transaction is a sequence of SQL statements executed as a single unit.
+
+Why TCL is used:
+- To ensure data consistency
+- To undo changes if an error occurs
+- To group multiple SQL statements safely
+
+Where TCL is used:
+- Banking systems
+- Money transfers
+- Order processing
+- Critical database updates
+
+MySQL TCL Commands:
+- START TRANSACTION
+- COMMIT
+- ROLLBACK
+- SAVEPOINT
+- ROLLBACK TO SAVEPOINT
+- RELEASE SAVEPOINT
+- SET autocommit
+
+----------------------------------------
+TCL BASIC SYNTAX (MySQL)
+----------------------------------------
+
+START TRANSACTION;
+SQL statements;
+COMMIT;
+
+OR
+
+START TRANSACTION;
+SQL statements;
+ROLLBACK;
+
+
+==================================================
+10 TCL EXAMPLES (MySQL Only)
+==================================================
+
+----------------------------------------
+1. Start and commit transaction
+----------------------------------------
+START TRANSACTION;
+INSERT INTO accounts VALUES (1,'Sai',5000);
+COMMIT;
+
+----------------------------------------
+2. Start and rollback transaction
+----------------------------------------
+START TRANSACTION;
+UPDATE accounts SET balance = balance - 1000;
+ROLLBACK;
+
+----------------------------------------
+3. Savepoint creation
+----------------------------------------
+START TRANSACTION;
+SAVEPOINT sp1;
+
+----------------------------------------
+4. Rollback to savepoint
+----------------------------------------
+START TRANSACTION;
+UPDATE accounts SET balance = 3000;
+SAVEPOINT sp1;
+UPDATE accounts SET balance = 2000;
+ROLLBACK TO sp1;
+COMMIT;
+
+----------------------------------------
+5. Release savepoint
+----------------------------------------
+START TRANSACTION;
+SAVEPOINT sp2;
+RELEASE SAVEPOINT sp2;
+
+----------------------------------------
+6. Multiple queries with commit
+----------------------------------------
+START TRANSACTION;
+INSERT INTO orders VALUES (101,'Laptop');
+UPDATE stock SET quantity = quantity - 1;
+COMMIT;
+
+----------------------------------------
+7. Disable autocommit
+----------------------------------------
+SET autocommit = 0;
+
+----------------------------------------
+8. Enable autocommit
+----------------------------------------
+SET autocommit = 1;
+
+----------------------------------------
+9. Partial rollback example
+----------------------------------------
+START TRANSACTION;
+INSERT INTO employee VALUES (1,'A');
+SAVEPOINT s1;
+INSERT INTO employee VALUES (2,'B');
+ROLLBACK TO s1;
+COMMIT;
+
+----------------------------------------
+10. Delete with transaction
+----------------------------------------
+START TRANSACTION;
+DELETE FROM users WHERE id = 5;
+COMMIT;
+
+
+========================================
+DCL (DATA CONTROL LANGUAGE) – MySQL
+========================================
+
+Definition:
+DCL commands in MySQL are used to control user access
+and permissions on database objects.
+
+Why DCL is used:
+- To secure database data
+- To allow controlled access
+- To manage users and roles
+
+Where DCL is used:
+- Multi-user databases
+- Production environments
+- Role-based access systems
+
+MySQL DCL Commands:
+- GRANT
+- REVOKE
+
+----------------------------------------
+DCL BASIC SYNTAX (MySQL)
+----------------------------------------
+
+GRANT privilege ON database.table TO 'user'@'host';
+REVOKE privilege ON database.table FROM 'user'@'host';
+
+
+==================================================
+10 DCL EXAMPLES (MySQL Only)
+==================================================
+
+----------------------------------------
+1. Grant SELECT permission
+----------------------------------------
+GRANT SELECT ON company.users TO 'user1'@'localhost';
+
+----------------------------------------
+2. Grant INSERT permission
+----------------------------------------
+GRANT INSERT ON company.orders TO 'user1'@'localhost';
+
+----------------------------------------
+3. Grant UPDATE permission
+----------------------------------------
+GRANT UPDATE ON company.employees TO 'user1'@'localhost';
+
+----------------------------------------
+4. Grant DELETE permission
+----------------------------------------
+GRANT DELETE ON company.customers TO 'user1'@'localhost';
+
+----------------------------------------
+5. Grant multiple privileges
+----------------------------------------
+GRANT SELECT, INSERT ON company.products TO 'user1'@'localhost';
+
+----------------------------------------
+6. Grant ALL privileges on database
+----------------------------------------
+GRANT ALL PRIVILEGES ON company.* TO 'admin1'@'localhost';
+
+----------------------------------------
+7. Revoke SELECT privilege
+----------------------------------------
+REVOKE SELECT ON company.users FROM 'user1'@'localhost';
+
+----------------------------------------
+8. Revoke INSERT privilege
+----------------------------------------
+REVOKE INSERT ON company.orders FROM 'user1'@'localhost';
+
+----------------------------------------
+9. Revoke ALL privileges
+----------------------------------------
+REVOKE ALL PRIVILEGES ON company.* FROM 'user1'@'localhost';
+
+----------------------------------------
+10. Grant privilege with GRANT OPTION
+----------------------------------------
+GRANT SELECT ON company.employees 
+TO 'manager1'@'localhost' WITH GRANT OPTION;
+
+
+==================================================
+INTERVIEW DIFFERENCE (MYSQL)
+==================================================
+
+TCL:
+- Controls transactions
+- Uses COMMIT and ROLLBACK
+- Ensures data safety
+
+DCL:
+- Controls permissions
+- Uses GRANT and REVOKE
+- Ensures database security
+
+==================================================
+END OF MYSQL TCL & DCL NOTES
+==================================================
